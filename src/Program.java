@@ -9,9 +9,9 @@ public class Program {
         System.out.println("Podaj liczbę");
         int userChoise = scan.nextInt();
 
-        while (userChoise > 100 || userChoise < 200 || userChoise % 3 == 0) {
+        while (!(userChoise > 100 && userChoise < 200 && userChoise % 3 == 0)) {
 
-            if (userChoise  < 100) {
+            if (userChoise < 100) {
                 System.out.println("Twoja liczba jest za mała");
                 System.out.println("Podaj liczbę");
                 userChoise = scan.nextInt();
@@ -27,14 +27,17 @@ public class Program {
                 userChoise = scan.nextInt();
 
             } else if (userChoise % 3 == 0) {
-                System.out.println("Twoja liczba jest ok");
 
-                break;
+
             }
 
         }
+
+        System.out.println("Twoja liczba jest ok");
     }
 }
+
+
 
 
 
